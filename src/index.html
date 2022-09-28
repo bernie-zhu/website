@@ -6,8 +6,233 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
     </head>
+
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="nav-bar">
+            <a href="#" class="header-logo">Bernie</a>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+        </header>
+        <section class="intro" id="home">
+        <script type="text/javascript" src = "js/main.js"></script>
+
+        <!-- Intro -->
+            
+            <div class = "intro-text-div">
+                <h1 class = "intro-text">
+                    <div class="strike"></div> Bernie Zhu</h1>
+                    <div class = "intro-subtext-div">
+                        <h2 class = "intro-subtext">Hey, I'm</h2>
+                    </div>
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <section id="about">
+            &nbsp;
+            <div class="about-text-div">
+                <h1 class="about-text">About</h1>
+            </div>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="assets/my_pic.jpg">
+                </div>
+                <div class="about-text-header">
+                    <h2 class="about-text-head">I'm Bernie</h2>
+                    <p class="about-text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="hobbies-title-div">
+                <h2 class="hobbies-title-text">A few of my hobbies...</h2>
+            </div>
+            <div class="wrapper">
+                <div class="columns">
+                    <div class="col col-33">
+                        <h2>Piano<img src="assets/piano.png" class="hobby-icon"></h2>
+                        <p class="hobby-text">Ever since I was young, I've been playing the piano. I've competed in and won multiple competitions, but now I've grown to love to simply playing the piano.</p>
+                    </div>
+                    <div class="col col-33">
+                        <h2>Gaming<img src="assets/game-controller.png" class="hobby-icon"></h2>
+                        <p class="hobby-text">Gaming has always been one of my favorite pastimes. Be it by myself, with friends, or communites I meet online, I love to explore new worlds and compete against others.</p>
+                    </div>
+                    <div class="col col-33">
+                        <h2>Reading<img src="assets/book.png" class="hobby-icon"></h2>
+                        <p class="hobby-text">Whenever I have the chance in public, I find myself reading light novels or comics, and sharing my enjoyment with my friends, and particularly my brother.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section id="projects">
+            <div class="trim">
+                <video autoplay loop muted plays-inline>
+                    <source src="assets/laptop_footage.mp4" type="video/mp4">
+                </video>
+            </div>
+            &nbsp;
+            <div class="project-text-div">
+                <h1 class="project-text-header">Projects</h1>
+            </div>
+
+            <div class="projects-subtext-div">
+                <h2 class="projects-subtext-text">A few of my projects...</h2>
+            </div>
+        
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div>
+                            <div class="slide-title-div">
+                                <h3 class="slide-title">CU Bus App</h3>
+                            </div>
+                            <div class="slide-text-div">
+                                <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide-title-div">
+                                <h3 class="slide-title">Bug Tracker</h3>
+                            </div>
+                            <div class="slide-text-div">
+                                <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide-title-div">
+                                <h3 class="slide-title">Platformer</h3>
+                            </div>
+                            <div class="slide-text-div">
+                                <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <span class="arrow-left"><img src="assets/next.png"></span>
+                        <span class="arrow-right"><img src="assets/next.png"></span>
+                        <ul>
+                            <li class="selected"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+
+        <section id="skills">
+            <!--&nbsp;-->
+            <div class="skills-text-div">
+                <h1 class="skills-text-header">Skills</h1>
+            </div>
+
+            <div class="wrapper">
+                <div class="columns">
+                    <div class="col col-33">
+                        <h2>Skills</h2>
+                        <p class="hobby-text">A few of my skills...</p>
+                        <button onclick="togglePopup1()">Show Skills</button>
+                    </div>
+                    <div class="col col-33">
+                        <h2>Technologies</h2>
+                        <p class="hobby-text">A few of the technologies I use...</p>
+                        <button onclick="togglePopup2()">Show Technologies</button>
+                    </div>
+                    <div class="col col-33">
+                        <h2>Qualities</h2>
+                        <p class="hobby-text">A few qualities I prioritize...</p>
+                        <button onclick="togglePopup3()">Show Qualities</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-wrapper" id="popup-1">
+                <div class="modal-overlay" onclick="togglePopup1()"></div>
+                <div class="modal-content">
+                    <div class="modal-close" onclick="togglePopup1()"> &times; </div>
+                
+                    <h1>Skills</h1>
+                    <p>HTML, CSS, C++, ...</p>
+                </div>
+            </div>
+
+            <div class="modal-wrapper" id="popup-2">
+                <div class="modal-overlay" onclick="togglePopup2()"></div>
+                <div class="modal-content">
+                    <div class="modal-close" onclick="togglePopup2()"> &times; </div>
+                
+                    <h1>Technologies</h1>
+                    <p>Artifical Intelligence, Machine Learning, Data Visualization, ...</p>
+                </div>
+            </div>
+
+            <div class="modal-wrapper" id="popup-3">
+                <div class="modal-overlay" onclick="togglePopup3()"></div>
+                <div class="modal-content">
+                    <div class="modal-close" onclick="togglePopup3()"> &times; </div>
+                
+                    <h1>Qualities</h1>
+                    <p>Leadership, Efficiency, Thoroughness, ...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+
+        <section id="contact">
+            <div class="contact-text-div">
+                <h1 class="contact-text-header">Contact Me</h1>
+            </div>
+            <div class="contact-subtext">
+                <h3 class="contact-me">Let's work together!</h3>
+                <h4 class="contact-me-text">A few ways to get in touch...</h4>
+            </div>
+
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/berniewzhu/" target="_blank">
+                    <img class="logo" src="assets/linkedin-icon.png">
+                </a>
+                <a href="https://github.com/bernie-zhu" target="_blank">
+                    <img class="logo" src="assets/github-icon.png">
+                </a>
+                <a href="https://instagram.com/bernie.zhu" target="_blank">
+                    <img class="logo" src="assets/instagram-icon.png">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
+            <div>Stock footage provided by <a class="link author-link-popup" target="_blank" href="https://www.videvo.net/profile/videvo">Videvo</a>,
+                downloaded from <a class="videvo-redirect" target="_blank" href="https://www.videvo.net">videvo.net</a></div>
+            </div>
+        </footer>
     </body>
 </html>
